@@ -1,0 +1,33 @@
+{
+  "name": "alura-nextjs-exploring-the-framework",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Junior743/alura-nextjs-exploring-the-framework#readme",
+  "bugs": {
+    "url": "https://github.com/Junior743/alura-nextjs-exploring-the-framework/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Junior743/alura-nextjs-exploring-the-framework.git"
+  },
+  "license": "ISC",
+  "author": "Junior743",
+  "type": "commonjs",
+  "main": "index.js",
+  "engines": {
+    "node": "=22.20.0",
+    "npm": "=11.6.2"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
