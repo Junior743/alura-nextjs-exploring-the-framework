@@ -1,8 +1,12 @@
+import Link from 'next/link'
+
 export default function HomePage() {
   return (
     <div>
       <h1>Welcome to the Home Page</h1>
-      <a href="/faq">Go to FAQ Page</a>
+      <Link href="/faq">
+        <h1>Go to FAQ Page</h1>
+      </Link>
     </div>
   )
 }
