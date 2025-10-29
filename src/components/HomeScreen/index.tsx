@@ -1,27 +1,10 @@
-// import Link from '../components/Link'
-// import Title from '../components/Title'
-// import Footer from '@/components/Footer'
+import { theme } from '../../theme'
+import Link from '../../components/Link'
+import Footer from '../../components/Footer'
+import { Image, Box, Text, Icon, Input, Button } from '../../theme/components'
 
-// export default function HomePage() {
-//   return (
-//     <div>
-//       <Title>Welcome to the Home Page</Title>
-//       <Link href="/faq">
-//         <h1>Go to FAQ Page</h1>
-//       </Link>
-
-//       <Footer />
-//     </div>
-//   )
-// }
-
-import { theme } from '../theme'
-import Link from '../components/Link'
-import Footer from '../components/Footer'
-import { Image, Box, Text, Icon, Input, Button } from '../theme/components'
-
-const LOGO_ALURA_URL = '/assets/images/alura-logo.svg'
-const SIDE_IMAGE_URL = '/assets/images/alura-cases.png'
+const LOGO_ALURA_URL = 'https://fakeimg.pl/94x44'
+const SIDE_IMAGE_URL = 'https://fakeimg.pl/2878x1640'
 
 function SideImage() {
   return (
@@ -95,11 +78,9 @@ function SideImage() {
                 lg: 'none',
               },
               width: {
-                xs: '100%',
                 lg: 'auto',
               },
               height: {
-                xs: 'auto',
                 lg: theme.space['x1/1'],
               },
             }}
