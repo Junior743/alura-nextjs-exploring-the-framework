@@ -1,6 +1,5 @@
-import Head from 'next/head'
-
 import Link from '../components/Link'
+import PageTitle from '../components/PageTitle'
 
 interface IFaq {
   question: string
@@ -29,9 +28,7 @@ export async function getStaticProps(): Promise<{ props: IFaqPageProps }> {
 export default function FAQPage({ faq }: IFaqPageProps) {
   return (
     <div>
-      <Head>
-        <title>FAQ - Alura Cases</title>
-      </Head>
+      <PageTitle>FAQ - Alura Cases</PageTitle>
 
       <h1>Welcome to the FAQ Page</h1>
       <Link href="/">
