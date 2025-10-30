@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import Link from '../components/Link'
 
 interface IFaq {
@@ -27,6 +29,10 @@ export async function getStaticProps(): Promise<{ props: IFaqPageProps }> {
 export default function FAQPage({ faq }: IFaqPageProps) {
   return (
     <div>
+      <Head>
+        <title>FAQ - Alura Cases</title>
+      </Head>
+
       <h1>Welcome to the FAQ Page</h1>
       <Link href="/">
         <h1>Go to Home Page</h1>

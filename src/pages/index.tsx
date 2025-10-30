@@ -1,3 +1,5 @@
+import Head from 'next/head'
+
 import { theme } from '../theme'
 import Link from '../components/Link'
 import Footer from '../components/Footer'
@@ -9,6 +11,10 @@ const LOGO_ALURA_URL = '/assets/images/alura-logo.svg'
 export default function HomeScreen() {
   return (
     <Box>
+      <Head>
+        <title>Home - Alura Cases</title>
+      </Head>
+
       <Box
         as="main"
         styleSheet={{
